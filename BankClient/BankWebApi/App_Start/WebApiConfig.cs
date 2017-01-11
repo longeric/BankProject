@@ -25,6 +25,11 @@ namespace BankWebApi
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            //enable the CROS: EnableCorsAttribute cors = new EnableCorsAttribute("*", "*", "*");
+            //config.EnableCors();
+
+            config.Filters.Add(new RequireHttpsAttribute());
         }
     }
 }
