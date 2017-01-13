@@ -14,7 +14,7 @@
     position: relative;
 }*/
 .navbar .navbar-brand {
-    position: absolute;
+     position: absolute;
     left: 50%;
     margin-left: -50px !important;
     display: block;
