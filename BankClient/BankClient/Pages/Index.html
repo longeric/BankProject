@@ -10,6 +10,20 @@
     <script src="../Controllers/loginController.js"></script>
     <script src="../Controllers/mainModule.js"></script>
     <link href="../Theme/layout.css" rel="stylesheet" />
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
 </head>
 <body>
     <nav class="navbar navbar-default">
@@ -23,7 +37,8 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">
-                    <img alt="Brand" src="../Pic/46t58PICpjw.jpg">
+                    <img class="pull-left" alt="Brand" src="../Pic/46t58PICpjw.jpg">
+                    <h3 class="pull-left"> Bank of MI </h3>
                 </a>
               
             </div>
@@ -32,7 +47,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-left ">  
                     <li class="dropdown">
-                        <a href="#" class="glyphicons glyphicons-show-lines" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <a href="#" class="glyphicons glyphicons-show-lines" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
                            <span class="glyphicon glyphicon-menu-hamburger"></span> 
                          </a>
                         <ul class="dropdown-menu">
@@ -40,6 +55,7 @@
                             <li><a href="#">Sign in</a></li>
                             <li><a href="#">News & Stories</a></li>
                             <li role="separator" class="divider"></li>
+                            <li class="navbar-header"
                             <li><a href="#">Credit Cards</a></li>
                             <li><a href="#">Checking</a></li>
                             <li><a href="#">Saving</a></li>
