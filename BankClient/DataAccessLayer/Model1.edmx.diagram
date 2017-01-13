@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b218661b579440c99b8c9bd15d1db1a9" Name="Diagram1">
+        <EntityTypeShape EntityType="bankModel.Account" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="bankModel.CreditAccount" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="bankModel.CreditStatement" Width="1.5" PointX="5.25" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="bankModel.LogIn" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="bankModel.PayCredit" Width="1.5" PointX="8.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bankModel.Statement" Width="1.5" PointX="5.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bankModel.UserProfile" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
+        <AssociationConnector Association="bankModel.FK__Account__LoginID__15502E78" ManuallyRouted="false" />
+        <AssociationConnector Association="bankModel.FK__PayCredit__Accou__20C1E124" ManuallyRouted="false" />
+        <AssociationConnector Association="bankModel.FK__Statement__Accou__182C9B23" ManuallyRouted="false" />
+        <AssociationConnector Association="bankModel.FK__CreditAcc__Login__1B0907CE" ManuallyRouted="false" />
+        <AssociationConnector Association="bankModel.FK__CreditSta__Credi__1DE57479" ManuallyRouted="false" />
+        <AssociationConnector Association="bankModel.FK__PayCredit__Credi__21B6055D" ManuallyRouted="false" />
+        <AssociationConnector Association="bankModel.FK__UserProfi__Login__1273C1CD" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
