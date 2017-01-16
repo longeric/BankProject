@@ -3,17 +3,24 @@
 <head>
     <title></title>
     <meta charset="utf-8" />
+
+    <!--First Script-->
     <script src="../Scripts/jquery-3.1.1.js"></script>
     <script src="../Scripts/bootstrap.js"></script>
-    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
-
-    <script src="../Scripts/angular.js"></script>
-    <script src="../Scripts/angular-ui-router.js"></script>
-    <script src="../App/myApp.js"></script>
+  
+     <!--Style-->
+     <link href="../Content/bootstrap.min.css" rel="stylesheet" />
     <link href="../Theme/layout.css" rel="stylesheet" />
-    <script src="../Controllers/loginController.js"></script>
-
     <link href="../Content/loginEdge.css" rel="stylesheet" />
+   
+    <!--Angular Script-->
+     <script src="../Scripts/angular.js"></script>
+    <script src="../Scripts/angular-ui-router.js"></script>
+
+    <!--Application Script-->
+      <script src="../App/myApp.js"></script>
+    <script src="../Controllers/loginController.js"></script>
+  
 
 </head>
 
@@ -22,7 +29,7 @@
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a ui-sref="Login">Sign In</a>
-        <a href="#">Checking</a>
+        <a ui-sref="Account">Checking</a>
         <a href="#">Saving</a>
         <a href="#">Credit Cards</a>
         <a href="#">Business Service</a>
