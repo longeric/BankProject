@@ -10,3 +10,9 @@
     top:10%;
     right:15%;
 }
+
+@media screen and (max-width:740px){
+    .container-fluid-carousel{
+        display:none;
+    }
+}
