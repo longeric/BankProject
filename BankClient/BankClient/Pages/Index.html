@@ -11,14 +11,17 @@
     <script src="../Scripts/angular-ui-router.js"></script>
     <script src="../App/myApp.js"></script>
     <link href="../Theme/layout.css" rel="stylesheet" />
+    <script src="../Controllers/loginController.js"></script>
+
+    <link href="../Content/loginEdge.css" rel="stylesheet" />
 
 </head>
 
-<body>
+<body ng-app="myApp">
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Sign In</a>
+        <a ui-sref="Login">Sign In</a>
         <a href="#">Checking</a>
         <a href="#">Saving</a>
         <a href="#">Credit Cards</a>
@@ -31,6 +34,8 @@
         <img class="navbar-brand navbar-brand-centered navbar-brand-centered-logo1" src="../Pic/China_Merchants_Bank_logo.svg.png" />
         <img class="navbar-brand navbar-brand-centered navbar-brand-centered-logo2" src="../Pic/China_Merchants_Bank_logo2.svg.png"/>
     </div>
+
+    <ui-view></ui-view>
 </body>
 </html>
 
