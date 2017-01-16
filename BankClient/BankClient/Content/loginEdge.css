@@ -5,8 +5,20 @@
     border-color:ThreeDLightShadow;
     background-color:white;
 }
-#position{
+.position{
     position:absolute;
     top:30%;
     right:15%;
+}
+
+@media screen and (max-width:740px){
+    .container-fluid-carousel{
+        display:none;
+    }
+    .position{
+    position:absolute;
+    top:30%;
+    right:30%;
+    width:45%;
+}
 }
