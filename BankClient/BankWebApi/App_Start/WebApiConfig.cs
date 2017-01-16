@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Web.Http;
 using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Serialization;
+using System.Web.Http.Cors;
 
 namespace BankWebApi
 {
@@ -26,8 +27,14 @@ namespace BankWebApi
                 defaults: new { id = RouteParameter.Optional }
             );
 
-            //enable the CROS: EnableCorsAttribute cors = new EnableCorsAttribute("*", "*", "*");
-            //config.EnableCors();
+            config.Formatters.JsonFormatter.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
+            config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+           //enable the Cross domain, by install webpai.cors
+           //this is used for global cros enabled
+           //If we want to enable CROS on specific function, do use this
+           EnableCorsAttribute cors = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors(cors);
+            
 
             config.Filters.Add(new RequireHttpsAttribute());
         }

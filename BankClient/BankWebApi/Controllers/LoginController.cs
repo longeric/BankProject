@@ -5,27 +5,41 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using DataAccessLayer;
-
+using BankWebApi.ViewModels;
 namespace BankWebApi.Controllers
 {
     public class LoginController : ApiController
     {
-
-        public HttpResponseMessage Get(string username, string password)
+        public IEnumerable<LogIn> Get()
         {
-            try
+            bankEntities be = new bankEntities();
+            List<loginViewModel> listofLogin = new List<loginViewModel>();
+            loginViewModel loginUser = new loginViewModel();
+            foreach(var user in be.LogIns)
             {
-                using (bankEntities bankentity = new bankEntities())
-                {
-                    //bankentity
-                    var message = Request.CreateResponse(HttpStatusCode.OK);
-                    message.Headers.Location = new Uri(Request.RequestUri + "string");
-                }
+                loginUser.LoginID = user.LoginID;
+                loginUser.Password = user.Password;
+                loginUser.Name = user.Name;
+                listofLogin.Add(loginUser);
             }
-            catch(Exception ex)
-            {
-                Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
-            }
+            IEnumerable<loginViewModel> users = listofLogin;
+
+            return be.LogIns.ToList();
+
+            //try
+            //{
+            //    using (bankEntities bankentity = new bankEntities())
+            //    {
+            //        //bankentity
+            //        var message = Request.CreateResponse(HttpStatusCode.OK);
+            //        message.Headers.Location = new Uri(Request.RequestUri + "string");
+            //        return Request.CreateResponse(HttpStatusCode.Created, "");
+            //    }
+            //}
+            //catch(Exception ex)
+            //{
+            //    return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);           
+            //}
         }
     }
 }
