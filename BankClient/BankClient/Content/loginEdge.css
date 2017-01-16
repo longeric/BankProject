@@ -5,3 +5,8 @@
     border-color:ThreeDLightShadow;
     background-color:white;
 }
+#position{
+    position:absolute;
+    top:10%;
+    right:15%;
+}
