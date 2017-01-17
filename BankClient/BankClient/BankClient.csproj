@@ -92,7 +92,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Pages\Account.html" />
+    <Content Include="Pic\China_Merchants_Bank_logo.svg.png" />
+    <Content Include="Pic\China_Merchants_Bank_logo2.svg.png" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-ui-router.js" />
     <Content Include="Scripts\angular-ui-router.min.js" />
