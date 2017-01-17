@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--First Script-->
+    <script src="../../Scripts/jquery-3.1.1.js"></script>
+    <script src="../../Scripts/bootstrap.js"></script>
+
+    <!--Style-->
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Theme/layout.css" rel="stylesheet" />
+    <link href="../../Content/loginEdge.css" rel="stylesheet" />
+
+    <!--Style for tabs-->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">-->
+    <link href="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.css" rel="stylesheet" />
+    <link href="https://material.angularjs.org/1.1.1/docs.css" rel="stylesheet" />
+
+    <!--Angular Script-->
+    <script src="../../Scripts/angular.js"></script>
+    <script src="../../Scripts/angular-ui-router.js"></script>
+
+    <!--Script for tabs-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
+    <script src="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.js"></script>
+
+    <!--Application Script-->
+    <script src="../../App/myApp.js"></script>
+    <script src="../../Controllers/loginController.js"></script>
+
+
+</head>
+<body>
+
+
+    <div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="myApp">
+        <md-content>
+            <md-tabs md-dynamic-height="" md-border-bottom="">
+
+                <!--Contact Tab-->
+                <md-tab label="Contact">
+                    <md-content class="md-padding">
+                        <!--Address info-->
+                        <div class="container">
+                            <h1 class="md-display-1">Mailing Address</h1>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Address</th>
+                                        <th>Associate Account #</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-info">
+                                    <tr>
+                                        <td>Primary</td>
+                                        <td>73 Stelton Rd.</td>
+                                        <td>08234324523522</td>
+                                        <td><a>Edit</a></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Office</td>
+                                        <td>242 old new brunswick Rd.</td>
+                                        <td>07884825235432</td>
+                                        <td><a>Edit</a>&nbsp;&nbsp;<a>Delete</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a id="add_row" class="btn btn-default pull-left">Add New Address</a><!--<a id='delete_row' class="pull-right btn btn-default">Delete Row</a>-->
+                        </div><br />
+
+                        <!--phone and mobile info-->
+                        <div class="container">
+                            <h1 class="md-display-1">Phone/Mobile Information</h1>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Type</th>
+                                        <th>Phone/Mobile #</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-info">
+                                    <tr>
+                                        <td>Home</td>
+                                        <td></td>
+                                        <td>6101025578</td>
+                                        <td><a>Edit</a></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Office</td>
+                                        <td></td>
+                                        <td>7874541144</td>
+                                        <td><a>Edit</a>&nbsp;&nbsp;<a>Delete</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a id="add_row" class="btn btn-default pull-left">Add New Number</a>
+                        </div>    <br />                   
+
+                        <!--Email info-->
+                        <div class="container">
+                            <h1 class="md-display-1">Email</h1>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Email</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-info">
+                                    <tr>
+                                        <td>Primary</td>
+                                        <td>10086@qq.com</td>
+                                        <td><a>Edit</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email #2</td>
+                                        <td>jackma@alibaba.com</td>
+                                        <td><a>Edit</a>&nbsp;&nbsp;<a>Delete</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a id="add_row" class="btn btn-default pull-left">Add New Number</a>
+                        </div>
+
+
+                    </md-content>
+                </md-tab>
+                
+                <!--Security Tab-->
+                <md-tab label="Security">
+                    <md-content class="md-padding">
+                        <div class="container">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-2 col-form-label">Current Password</label>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="" placeholder="Current Password">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-2 col-form-label">New Password</label>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="" placeholder="New Password">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-2 col-form-label">Confirm New Password</label>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="" placeholder="Confirm New Password">
+                                    </div>
+                                </div><br />
+                                <div class="form-group row">
+                                    <div class="col-lg-offset-1">
+                                        <input type="button" class="btn btn-primary" value="Change Password" />&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="button" class="btn btn-primary" value="Back" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </md-content>
+                </md-tab>
+
+            </md-tabs>
+        </md-content>
+    </div>
+
+
+    <!--Dynamic Tab with JQuery-->
+    <!--<div class="container">
+        <h2>User Profile</h2>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#profileContact">Contact</a></li>
+            <li><a href="#profileSecurity">Security</a></li>
+        </ul>
+
+        <div class="tab-content">
+
+            <div id="menu1" class="tab-pane fade in active">
+               <table>
+                   <thead>
+                       <tr>Address</tr>
+                   </thead>
+                   <tbody>
+                       <tr>
+                           <td>Primary Residence</td>
+                           <td>  info</td>
+                           <td>  Edit</td>
+                           <td>  Delete</td>
+                       </tr>
+                       <tr>
+                           <td>Address 2</td>
+                           <td>info</td>
+                           <td>Edit</td>
+                           <td>Delete</td>
+                       </tr>
+                   </tbody>
+               </table>
+            </div>
+
+
+
+
+            <div id="menu2" class="tab-pane fade">
+                <p>This is content for Section 2.</p>
+            </div>
+
+        </div>
+
+
+        <hr>
+        <p class="act"><b>Active Tab</b>: <span></span></p>
+        <p class="prev"><b>Previous Tab</b>: <span></span></p>
+    </div>-->
+</body>
+</html>
+<script>
+
+    //active and previous tabs shown
+    $(document).ready(function () {
+        $(".nav-tabs a").click(function () {
+            $(this).tab('show');
+        });
+        $('.nav-tabs a').on('shown.bs.tab', function (event) {
+            var x = $(event.target).text();         // active tab
+            var y = $(event.relatedTarget).text();  // previous tab
+            $(".act span").text(x);
+            $(".prev span").text(y);
+        });
+    });
+</script>

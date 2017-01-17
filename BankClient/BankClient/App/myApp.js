@@ -1,6 +1,6 @@
 ﻿/// <reference path="C:\Users\yangj\Source\Repos\BankProject\BankClient\BankClient\Scripts/angular.js" />
 
-var myApp = angular.module("myApp", ['ui.router']);
+var myApp = angular.module("myApp", ['ui.router', 'ngMaterial', 'ngMessages', 'material.svgAssetsCache']);
 //just for fun
 myApp.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
