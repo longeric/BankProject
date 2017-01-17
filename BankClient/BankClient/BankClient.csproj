@@ -78,7 +78,6 @@
     <Content Include="Content\loginEdge.css" />
     <Content Include="Content\ui-bootstrap-csp.css" />
     <Content Include="Controllers\loginController.js" />
-    <Content Include="Controllers\mainModule.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="image\m1.jpg" />
     <Content Include="image\m2.jpg" />
@@ -92,6 +91,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Pages\Account.html" />
+    <Content Include="Pages\CreditCard.html" />
     <Content Include="Pic\China_Merchants_Bank_logo.svg.png" />
     <Content Include="Pic\China_Merchants_Bank_logo2.svg.png" />
     <Content Include="Scripts\angular-mocks.js" />

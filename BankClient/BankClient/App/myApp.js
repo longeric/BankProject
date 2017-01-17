@@ -7,13 +7,19 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
         .state('Login', {
             url: '/Login',
             templateUrl: 'Login.html'
-            //template: '<b>This is login view</b>'
-
         })
          .state('Account', {
              url: '/Account',
              templateUrl: 'Account.html'
          })
+        .state("Account.Checking", {
+            url: '/Checking',
+            template:'<b>This is Checking Account</b>'
+        })
+        .state("Account.CreditCard", {
+            url: '/CreditCard',
+            templateUrl:'CreditCard.html'
+        })
         .state('Page2', {
             url: '/Page1',
             templateUrl: 'Page2.html'
