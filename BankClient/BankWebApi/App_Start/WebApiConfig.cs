@@ -32,7 +32,7 @@ namespace BankWebApi
            //enable the Cross domain, by install webpai.cors
            //this is used for global cros enabled
            //If we want to enable CROS on specific function, do use this
-           EnableCorsAttribute cors = new EnableCorsAttribute("*", "*", "*");
+            EnableCorsAttribute cors = new EnableCorsAttribute("*", "*", "*");
             config.EnableCors(cors);
             
 

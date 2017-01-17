@@ -6,25 +6,35 @@ using System.Net.Http;
 using System.Web.Http;
 using DataAccessLayer;
 using BankWebApi.ViewModels;
+using System.Threading;
+using System.Web.Http.Cors;
+
 namespace BankWebApi.Controllers
 {
+    [EnableCorsAttribute("*", "*", "*")]
     public class LoginController : ApiController
     {
+        [RequireHttps]
+        [BasicAuthentication]
         public IEnumerable<LogIn> Get()
         {
-            bankEntities be = new bankEntities();
-            List<loginViewModel> listofLogin = new List<loginViewModel>();
-            loginViewModel loginUser = new loginViewModel();
-            foreach(var user in be.LogIns)
+            string username = Thread.CurrentPrincipal.Identity.Name;
+            
+            using (bankEntities be = new bankEntities())
             {
-                loginUser.LoginID = user.LoginID;
-                loginUser.Password = user.Password;
-                loginUser.Name = user.Name;
-                listofLogin.Add(loginUser);
+                //List<loginViewModel> listofLogin = new List<loginViewModel>();
+                //loginViewModel loginUser = new loginViewModel();
+                //foreach (var user in be.LogIns)
+                //{
+                //    loginUser.LoginID = user.LoginID;
+                //    loginUser.Password = user.Password;
+                //    loginUser.Name = user.Name;
+                //    listofLogin.Add(loginUser);
+                //}
+                return be.LogIns.ToList();
             }
-            IEnumerable<loginViewModel> users = listofLogin;
 
-            return be.LogIns.ToList();
+            
 
             //try
             //{
