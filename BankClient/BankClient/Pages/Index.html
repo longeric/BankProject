@@ -9,16 +9,17 @@
     <script src="../Scripts/bootstrap.js"></script>
   
      <!--Style-->
-    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+     <link href="../Content/bootstrap.min.css" rel="stylesheet" />
     <link href="../Theme/layout.css" rel="stylesheet" />
+    <link href="../Content/CheckingStyle.css" rel="stylesheet" />
     <link href="../Content/loginEdge.css" rel="stylesheet" />
-
+   
     <!--Style for tabs-->
     <link href="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.css" rel="stylesheet" />
     <link href="https://material.angularjs.org/1.1.1/docs.css" rel="stylesheet" />
    
     <!--Angular Script-->
-    <script src="../Scripts/angular.js"></script>
+     <script src="../Scripts/angular.js"></script>
     <script src="../Scripts/angular-ui-router.js"></script>
     <script src="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.js"></script>
 
@@ -30,9 +31,11 @@
     <script src="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.js"></script>
 
     <!--Application Script-->
-    <script src="../App/myApp.js"></script>
+    <script src="../Controllers/CheckingController.js"></script>
     <script src="../Controllers/loginController.js"></script>
+      <script src="../App/myApp.js"></script>
   
+
 
 </head>
 
@@ -40,8 +43,8 @@
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a ui-sref="Login">Sign In</a>
-        <a ui-sref="Account">Checking</a>
+        <a ui-sref="Login" onclick="closeNav()">Sign In</a>
+        <a ui-sref="Account" onclick="closeNav()">Checking</a>
         <a href="#">Saving</a>
         <a href="#">Credit Cards</a>
         <a href="#">Business Service</a>
@@ -53,6 +56,8 @@
         <img class="navbar-brand navbar-brand-centered navbar-brand-centered-logo1" src="../Pic/China_Merchants_Bank_logo.svg.png" />
         <img class="navbar-brand navbar-brand-centered navbar-brand-centered-logo2" src="../Pic/China_Merchants_Bank_logo2.svg.png"/>
     </div>
+
+
 
     <ui-view></ui-view>
 </body>

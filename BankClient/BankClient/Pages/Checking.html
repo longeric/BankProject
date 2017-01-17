@@ -1,0 +1,49 @@
+﻿
+<div ng-controller="CheckingController">
+    <div class="container-fluid">
+        <form class="col-md-offset-4 col-md-3" id="TotalChecking">
+            <h4>Total Checking</h4>
+            <div class="form-group" ng-controller="CheckingController">
+                <div>Available Checking({{AccountNo}})</div>
+                <br />
+                <div>${{message}}</div>
+            </div>
+        </form>
+    </div>
+   <br />
+    <div>
+        <form class="container-fluid">
+            
+            <select class="col-md-offset-4 col-md-3">
+                <option class="dropdown-header">Show All Transaction</option>
+                <option>Show Transaction in 7 days</option>
+                <option>Show Transaction in 1 month</option>
+                <option>Show Transaction in 6 monthes</option>
+                <option>Show Transaction in this year</option>
+            </select>
+           
+        </form>
+    </div>
+    <br />
+    <div>
+        <table class="col-md-offset-2 table table-bordered" id="tablewidth">
+            <tr>
+                <th> Posting date </th>
+                <th> Description </th>
+                <th> Type </th>
+                <th> $Amount </th>
+                <th> $Avaliable Balance </th>
+            </tr>
+            <tr>
+                <th> 01/17/2017 </th>
+                <th> rent pay </th>
+                <th> checking </th>
+                <th> 600.00 </th>
+                <th> 1423.12 </th>
+            </tr>
+        </table>
+    </div>
+
+
+</div>
+
