@@ -139,7 +139,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Pages\UserProfile\profile.html" />
+    <Content Include="Pages\profile.html" />
     <Content Include="Pages\Account.html" />
     <Content Include="Pages\CreditCard.html" />
     <Content Include="Pages\Checking.html" />
