@@ -22,8 +22,8 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
             url: '/CreditCard',
             templateUrl:'CreditCard.html'
         })
-        .state('Page2', {
-            url: '/Page1',
-            templateUrl: 'Page2.html'
+        .state("UserProfile", {
+            url: '/profile',
+            templateUrl: 'profile.html'
         })
 });

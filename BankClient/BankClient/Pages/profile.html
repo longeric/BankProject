@@ -1,45 +1,6 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-	<meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+﻿
 
-    <!--First Script-->
-    <script src="../../Scripts/jquery-3.1.1.js"></script>
-    <script src="../../Scripts/bootstrap.js"></script>
-
-    <!--Style-->
-    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="../../Theme/layout.css" rel="stylesheet" />
-    <link href="../../Content/loginEdge.css" rel="stylesheet" />
-
-    <!--Style for tabs-->
-    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">-->
-    <link href="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.css" rel="stylesheet" />
-    <link href="https://material.angularjs.org/1.1.1/docs.css" rel="stylesheet" />
-
-    <!--Angular Script-->
-    <script src="../../Scripts/angular.js"></script>
-    <script src="../../Scripts/angular-ui-router.js"></script>
-
-    <!--Script for tabs-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
-    <script src="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.js"></script>
-
-    <!--Application Script-->
-    <script src="../../App/myApp.js"></script>
-    <script src="../../Controllers/loginController.js"></script>
-
-
-</head>
-<body>
-
-
-    <div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="myApp">
+    <div ng-cloak="" class="tabsdemoDynamicHeight">
         <md-content>
             <md-tabs md-dynamic-height="" md-border-bottom="">
 
@@ -131,7 +92,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <a id="add_row" class="btn btn-default pull-left">Add New Number</a>
+                            <a id="add_row" class="btn btn-default pull-left">Add New Email</a>
                         </div>
 
 
@@ -141,7 +102,7 @@
                 <!--Security Tab-->
                 <md-tab label="Security">
                     <md-content class="md-padding">
-                        <div class="container">
+                        <div class="container col-md-offset-4">
                             <form>
                                 <div class="form-group row">
                                     <label for="" class="col-sm-2 col-form-label">Current Password</label>
@@ -176,67 +137,3 @@
         </md-content>
     </div>
 
-
-    <!--Dynamic Tab with JQuery-->
-    <!--<div class="container">
-        <h2>User Profile</h2>
-        <ul class="nav nav-tabs">
-            <li class="active"><a href="#profileContact">Contact</a></li>
-            <li><a href="#profileSecurity">Security</a></li>
-        </ul>
-
-        <div class="tab-content">
-
-            <div id="menu1" class="tab-pane fade in active">
-               <table>
-                   <thead>
-                       <tr>Address</tr>
-                   </thead>
-                   <tbody>
-                       <tr>
-                           <td>Primary Residence</td>
-                           <td>  info</td>
-                           <td>  Edit</td>
-                           <td>  Delete</td>
-                       </tr>
-                       <tr>
-                           <td>Address 2</td>
-                           <td>info</td>
-                           <td>Edit</td>
-                           <td>Delete</td>
-                       </tr>
-                   </tbody>
-               </table>
-            </div>
-
-
-
-
-            <div id="menu2" class="tab-pane fade">
-                <p>This is content for Section 2.</p>
-            </div>
-
-        </div>
-
-
-        <hr>
-        <p class="act"><b>Active Tab</b>: <span></span></p>
-        <p class="prev"><b>Previous Tab</b>: <span></span></p>
-    </div>-->
-</body>
-</html>
-<script>
-
-    //active and previous tabs shown
-    $(document).ready(function () {
-        $(".nav-tabs a").click(function () {
-            $(this).tab('show');
-        });
-        $('.nav-tabs a').on('shown.bs.tab', function (event) {
-            var x = $(event.target).text();         // active tab
-            var y = $(event.relatedTarget).text();  // previous tab
-            $(".act span").text(x);
-            $(".prev span").text(y);
-        });
-    });
-</script>
