@@ -11,7 +11,7 @@
     right:15%;
 }
 
-@media screen and (max-width:740px){
+@media screen and (max-width:920px){
     .container-fluid-carousel{
         display:none;
     }
@@ -21,4 +21,10 @@
     right:30%;
     width:45%;
 }
+}
+
+@media screen and (max-width:420px){
+    .loginform{width:250px;
+               position:initial;
+    }
 }
