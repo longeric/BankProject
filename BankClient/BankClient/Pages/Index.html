@@ -3,7 +3,7 @@
 <head>
     <title></title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <!--First Script-->
     <script src="../Scripts/jquery-3.1.1.js"></script>
@@ -19,6 +19,7 @@
     <link href="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.css" rel="stylesheet" />
     <link href="https://material.angularjs.org/1.1.1/docs.css" rel="stylesheet" />
    
+    
     <!--Angular Script-->
      <script src="../Scripts/angular.js"></script>
     <script src="../Scripts/angular-ui-router.js"></script>
@@ -77,7 +78,7 @@
                     </li>
                 </ul>
             </nav>
-        
+
         <!-- /#sidebar-wrapper -->
         <!-- Page Content -->
         <div id="page-content-wrapper">
@@ -96,18 +97,18 @@
                     <img src="../Pic/Barclays-large.png" class="img-responsive center-block barclays-logo-lg" />
                     <img src="../Pic/Barclays-small.png" class="img-responsive pull-right barclays-logo-sm"/>
                 </div>
-                
-             </div>
-            
+
+    </div>
+
             <div class="container" >
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                     </div>
                 </div>
-            </div>
+    </div>
 
 
-            <ui-view></ui-view>
+    <ui-view></ui-view>
         </div>
     </div>
 </body>
@@ -137,7 +138,7 @@ $(document).ready(function () {
             trigger.addClass('is-open');
             isClosed = true;
         }
-    }
+}
 
     $('[data-toggle="offcanvas"]').click(function () {
         $('#wrapper').toggleClass('toggled');

@@ -130,6 +130,8 @@
     <Content Include="image\m1.jpg" />
     <Content Include="image\m2.jpg" />
     <Content Include="image\m3.jpg" />
+    <Content Include="image\trans new.png" />
+    <Content Include="image\update2.png" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -146,6 +148,9 @@
     <Content Include="Pages\Checking.html" />
     <Content Include="Pic\Barclays-large.png" />
     <Content Include="Pic\Barclays-small.png" />
+    <Content Include="Pages\TMIB.html" />
+    <Content Include="Pages\TMOB.html" />
+    <Content Include="Pages\TransferMoney.html" />
     <Content Include="Pic\China_Merchants_Bank_logo.svg.png" />
     <Content Include="Pic\China_Merchants_Bank_logo2.svg.png" />
     <Content Include="Scripts\angular-mocks.js" />
