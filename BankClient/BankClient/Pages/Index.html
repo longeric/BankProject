@@ -3,7 +3,7 @@
 <head>
     <title></title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"">
 
     <!--First Script-->
     <script src="../Scripts/jquery-3.1.1.js"></script>
@@ -41,41 +41,106 @@
 </head>
 
 <body ng-app="myApp">
+    <div id="wrapper">
+        <div class="overlay"></div>
+            <!-- Sidebar -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+                <ul class="nav sidebar-nav">
+                    <li class="sidebar-brand" style="height:110%">
+                        <a>
+                            <img src="../Pic/Barclays-small.png" class="img-responsive" style="width:70%; height:70%; float:left" />
+                        </a>
+                    </li>
+                    <li>
+                        <a ui-sref="Home" class="hamburger is-closed" data-toggle="offcanvas" style="top:15%; width:100%;">Home</a>
+                    </li>
+                    <li>
+                        <a ui-sref="Login" class="hamburger is-closed" data-toggle="offcanvas" style="top:15%; width:100%;">Sign In</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" style="left:7%;width:100%;" data-toggle="dropdown">Account <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-header">Personal Account Service</li>
+                            <li><a ui-sref="Account" class="hamburger is-closed" style="position:static" data-toggle="offcanvas">Checking</a></li>
+                            <li><a ui-sref="#" class="hamburger is-closed" style="position:static" data-toggle="offcanvas">Saving</a></li>
+                            <li><a ui-sref="#" class="hamburger is-closed" style="position:static" data-toggle="offcanvas">Credit Card</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a ui-sref="#" class="hamburger is-closed" data-toggle="offcanvas" style="top:15%; width:100%;">Business Service</a>
+                    </li>
+                    <li>
+                        <a ui-sref="#" class="hamburger is-closed" data-toggle="offcanvas" style="top:15%; width:100%;">Contact</a>
+                    </li>
+                    <li>
+                        <a ui-sref="UserProfile" class="hamburger is-closed" data-toggle="offcanvas" style="top:15%; width:100%;">User Profile</a>
+                    </li>
+                </ul>
+            </nav>
+        
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <!-- Horizontal navbar 1270-->
+            <div class="navbar navbar-static-top" style="position:fixed;top:0; background-color:white; width:100%; border-bottom:1px, solid;">
+                <!--hamburger-->
+                <div class="center-block" style="">
+                    <button type="button" class="hamburger is-closed col-md-5" data-toggle="offcanvas">
+                        <span class="hamb-top"></span>
+                        <span class="hamb-middle"></span>
+                        <span class="hamb-bottom"></span>
+                    </button>
+                </div>
+                <!--brand logo-->
+                <div class="center-block">
+                    <img src="../Pic/Barclays-large.png" class="img-responsive center-block barclays-logo-lg" />
+                    <img src="../Pic/Barclays-small.png" class="img-responsive pull-right barclays-logo-sm"/>
+                </div>
+                
+             </div>
+            
+            <div class="container" >
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                    </div>
+                </div>
+            </div>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a ui-sref="Login" onclick="closeNav()">Sign In</a>
-        <a ui-sref="Account" onclick="closeNav()">Checking</a>
-        <a href="#">Saving</a>
-        <a href="#">Credit Cards</a>
-        <a href="#">Business Service</a>
-        <a href="#">Contact</a>
-        <a ui-sref="UserProfile" onclick="closeNav()">User Profile</a>
 
+            <ui-view></ui-view>
+        </div>
     </div>
-
-    <div id="main" class="navbar-default row">
-        <span style="font-size:30px;cursor:pointer" class="navbar-brand" onclick="openNav()">&#9776;</span>
-        <img class="navbar-brand navbar-brand-centered navbar-brand-centered-logo1" src="../Pic/China_Merchants_Bank_logo.svg.png" />
-        <img class="navbar-brand navbar-brand-centered navbar-brand-centered-logo2" src="../Pic/China_Merchants_Bank_logo2.svg.png"/>
-    </div>
-
-
-
-    <ui-view></ui-view>
 </body>
 </html>
 
 <script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.body.style.backgroundColor = "white";
-}
+$(document).ready(function () {
+    var trigger = $('.hamburger'),
+        overlay = $('.overlay'),
+       isClosed = false;
+
+    trigger.click(function () {
+        hamburger_cross();
+    });
+
+    function hamburger_cross() {
+
+        if (isClosed == true) {
+            overlay.hide();
+            trigger.removeClass('is-open');
+            trigger.addClass('is-closed');
+            isClosed = false;
+        } else {
+            overlay.show();
+            trigger.removeClass('is-closed');
+            trigger.addClass('is-open');
+            isClosed = true;
+        }
+    }
+
+    $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+    });
+});
 </script>

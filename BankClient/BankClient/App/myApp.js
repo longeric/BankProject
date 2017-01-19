@@ -6,6 +6,10 @@ myApp.controller("CheckingController", CheckingController);
 //just for fun
 myApp.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
+        .state("Home", {
+            url: '/Home',
+            templateUrl: 'Home.html'
+        })
         .state('Login', {
             url: '/Login',
             templateUrl: 'Login.html'
