@@ -22,6 +22,18 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
             url: '/CreditCard',
             templateUrl:'CreditCard.html'
         })
+        .state("TransferMoney", {
+            url: '/BussinessService',
+            templateUrl:'TransferMoney.html'
+        })
+        .state("TMIB", {
+            url: '/BussinessService/TMIB',
+            templateUrl:'TMIB.html'
+        })
+        .state("TMOB", {
+            url: '/BussinessService/TMOB',
+            templateUrl: 'TMOB.html'
+        })
         .state("UserProfile", {
             url: '/profile',
             templateUrl: 'profile.html'
