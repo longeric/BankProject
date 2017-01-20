@@ -41,12 +41,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
         .state("UserProfile", {
             url: '/profile',
             templateUrl: 'profile.html'
+        })
+
         .state("Account.Saving", {
             url: '/Saving',
             templateUrl:'Saving.html'
         })
-        .state('Page2', {
-            url: '/Page1',
-            templateUrl: 'Page2.html'
-        })
+        
 });
