@@ -1,32 +1,81 @@
 ﻿
-<div ng-controller="CheckingController">
-    <div class="container-fluid">
-        <form class="col-md-offset-4 col-md-3" id="TotalChecking">
-            <h4>Total Checking</h4>
-            <div class="form-group" ng-controller="CheckingController">
-                <div>Available Checking({{AccountNo}})</div>
-                <br />
-                <div>${{message}}</div>
-            </div>
-        </form>
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading" style="background-color:lightskyblue">
+        <span class="glyphicon glyphicon-usd"></span>
+        <b> BofC Core Checking - 3217</b>
     </div>
-   <br />
-    <div>
-        <form class="container-fluid">
-            
-            <select class="col-md-offset-4 col-md-3">
-                <option class="dropdown-header">Show All Transaction</option>
-                <option>Show Transaction in 7 days</option>
-                <option>Show Transaction in 1 month</option>
-                <option>Show Transaction in 6 monthes</option>
-                <option>Show Transaction in this year</option>
-            </select>
-           
-        </form>
+
+    <div class="panel-body">
+        <div class="col-md-3 well-sm">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Available balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>$3,162.47</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-md-3 well-sm">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Present balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>$3,162.47</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-md-3 well-sm">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Overdraft protecion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Off</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-md-3 well-sm">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Debit card coverage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Off</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
     </div>
-    <br />
-    <div>
-        <table class="col-md-offset-2 table table-bordered" id="tablewidth">
+    <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
+        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+        <span></span> <b class="caret"></b>
+    </div>
+
+    <!-- Table -->
+    <table class="table">
+        <thead>
             <tr>
                 <th> Posting date </th>
                 <th> Description </th>
@@ -34,16 +83,16 @@
                 <th> $Amount </th>
                 <th> $Avaliable Balance </th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
-                <th> 01/17/2017 </th>
-                <th> rent pay </th>
-                <th> checking </th>
-                <th> 600.00 </th>
-                <th> 1423.12 </th>
+                <td> 01/17/2017 </td>
+                <td> rent pay </td>
+                <td> checking </td>
+                <td> 600.00 </td>
+                <td> 1423.12 </td>
             </tr>
-        </table>
-    </div>
+        </tbody>
 
-
+    </table>
 </div>
-

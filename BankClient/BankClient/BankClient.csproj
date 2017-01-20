@@ -143,6 +143,7 @@
     <Content Include="Pages\Account.html" />
     <Content Include="Pages\CreditCard.html" />
     <Content Include="Pages\Checking.html" />
+    <Content Include="Pages\Saving.html" />
     <Content Include="Pic\China_Merchants_Bank_logo.svg.png" />
     <Content Include="Pic\China_Merchants_Bank_logo2.svg.png" />
     <Content Include="Scripts\angular-mocks.js" />

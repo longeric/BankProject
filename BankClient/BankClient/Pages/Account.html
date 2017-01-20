@@ -1,34 +1,42 @@
 ﻿
-<div class="col-lg-3">
-    <ul class="nav nav-pills nav-stacked">
+<div class="col-md-3 col-lg-3">
+    <ul class="nav nav-stacked nav-pills ">
+
+       <li></li>
+
+
         <li role="presentation" ><a ui-sref="Account.Checking">
-                                    <div class="panel panel-default">
+                                   <div class="panel panel-default">
                                         <div class="panel-heading">TOTAL CHECKING</div>
                                         <div class="panel-body">
                                             $1573.38
                                         </div>
                                     </div>
-            </a></li>
-        <li role="presentation"><a href="#">
+        </a></li>
+
+        <li role="presentation"><a ui-sref="Account.Saving">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">TOTAL SAVING</div>
                                         <div class="panel-body">
                                             $3210.25
                                         </div>
                                     </div>
-            </a></li>
+        </a></li>
+    
         <li role="presentation"><a ui-sref="Account.CreditCard">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">Credit Card</div>
-                                        <div class="panel-body">
-                                            $2210.89
-                                        </div>
-                                    </div>
-            </a></li>
+                <div class="panel panel-default">
+                    <div class="panel-heading">CREDIT CARD</div>
+                    <div class="panel-body">
+                        $2210.89
+                    </div>
+                </div>
+        </a></li>
+       
     </ul>
 </div>
 
-<div class="col-lg-9">
+<div class="col-md-9 col-lg-9">
+    <h2></h2>
     <ui-view>
 
     </ui-view>
