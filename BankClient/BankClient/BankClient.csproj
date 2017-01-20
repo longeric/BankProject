@@ -130,6 +130,8 @@
     <Content Include="image\m1.jpg" />
     <Content Include="image\m2.jpg" />
     <Content Include="image\m3.jpg" />
+    <Content Include="image\trans new.png" />
+    <Content Include="image\update2.png" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -139,10 +141,16 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Pages\Home.html" />
     <Content Include="Pages\profile.html" />
     <Content Include="Pages\Account.html" />
     <Content Include="Pages\CreditCard.html" />
     <Content Include="Pages\Checking.html" />
+    <Content Include="Pic\Barclays-large.png" />
+    <Content Include="Pic\Barclays-small.png" />
+    <Content Include="Pages\TMIB.html" />
+    <Content Include="Pages\TMOB.html" />
+    <Content Include="Pages\TransferMoney.html" />
     <Content Include="Pages\Saving.html" />
     <Content Include="Pic\China_Merchants_Bank_logo.svg.png" />
     <Content Include="Pic\China_Merchants_Bank_logo2.svg.png" />
